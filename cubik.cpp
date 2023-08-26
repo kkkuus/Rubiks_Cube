@@ -67,7 +67,7 @@ public:
         data = temp;
     }
 
-    //----------Инициализация сторон------------//
+    //----------РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ СЃС‚РѕСЂРѕРЅ------------//
     static void init_side(std::vector<std::vector<color>>& data, std::vector<std::vector<char>>& temp)
     {
         for (int i = 0; i < 3; ++i)
@@ -147,7 +147,7 @@ public:
                 down[i][j] = side[i][j];
         }
     }
-    //-----------Повороты--------------//
+    //-----------РџРѕРІРѕСЂРѕС‚С‹--------------//
     void R()
     {
         std::vector<color> temp1(3, black), temp2(black);
@@ -329,8 +329,8 @@ public:
         rotate_to_right(back);
     }
 
-    //---------Повороты куба--------//
-    void y_() //поворот кубика вправо в горизонтальной плоскости
+    //---------РџРѕРІРѕСЂРѕС‚С‹ РєСѓР±Р°--------//
+    void y_() //РїРѕРІРѕСЂРѕС‚ РєСѓР±РёРєР° РІРїСЂР°РІРѕ РІ РіРѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅРѕР№ РїР»РѕСЃРєРѕСЃС‚Рё
     {
         swap(left, front);
         swap(left, right);
@@ -349,7 +349,7 @@ public:
         rotate_to_left(down);
     }
 
-    void x_()  //поворот куба вниз
+    void x_()  //РїРѕРІРѕСЂРѕС‚ РєСѓР±Р° РІРЅРёР·
     {
         std::vector<std::vector<color>> temp1, temp2;
         temp1 = down;
@@ -367,7 +367,7 @@ public:
         rotate_to_left(right);
     }
 
-    void x() //поворот куба вверх
+    void x() //РїРѕРІРѕСЂРѕС‚ РєСѓР±Р° РІРІРµСЂС…
     {
         std::vector<std::vector<color>> temp1, temp2;
         temp1 = up;
@@ -543,43 +543,33 @@ public:
             {
             case 1:
                 F();
-                //std::cout << "F" << ' ';
                 break;
             case 2:
                 F_();
-                //std::cout << "F_" << ' ';
                 break;
             case 3:
                 R();
-                //std::cout << "R" << ' ';
                 break;
             case 4:
                 R_();
-                //std::cout << "R_" << ' ';
                 break;
             case 5:
                 L();
-                //std::cout << "L" << ' ';
                 break;
             case 6:
                 L_();
-                //std::cout << "L_" << ' ';
                 break;
             case 7:
                 U();
-                //std::cout << "U" << ' ';
                 break;
             case 8:
                 U_();
-                //std::cout << "U_" << ' ';
                 break;
             case 9:
                 D();
-                //std::cout << "D" << ' ';
                 break;
             case 10:
                 D_();
-                //std::cout << "D_" << ' ';
                 break;
             }
         }
