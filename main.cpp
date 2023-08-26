@@ -68,13 +68,13 @@ void init_cube(Rubik_Cube& cube)
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    std::cout << "read - ÷òåíèå êóáèêà èç ôàéëà" << std::endl;
-    std::cout << "rand - âûâîä ðàíäîìíîãî êóáèêà" << std::endl;
-    std::cout << "solve - ñáîðêà êóáèêà" << std::endl;
-    std::cout << "save - ñîõðàíåíèå òåêóùåãî êóáèêà â ôàéë" << std::endl;
-    std::cout << "print - âûâîä òåêóùåãî êóáèêà â êîíñîëü " << std::endl;
-    std::cout << "Äëÿ ñîâåðøåíèÿ ïîâîðîòà, ââåäèòå íóæíûé âàì ïîâîðîò" << std::endl;
-    std::cout << "Äëÿ çàâåðøåíèÿ ðàáîòû ñ êóáèêîì ââåäèòå end" << std::endl;
+    std::cout << "read - Ñ‡Ñ‚ÐµÐ½Ð¸Ðµ ÐºÑƒÐ±Ð¸ÐºÐ° Ð¸Ð· Ñ„Ð°Ð¹Ð»Ð°" << std::endl;
+    std::cout << "rand - Ð²Ñ‹Ð²Ð¾Ð´ Ñ€Ð°Ð½Ð´Ð¾Ð¼Ð½Ð¾Ð³Ð¾ ÐºÑƒÐ±Ð¸ÐºÐ°" << std::endl;
+    std::cout << "solve - ÑÐ±Ð¾Ñ€ÐºÐ° ÐºÑƒÐ±Ð¸ÐºÐ°" << std::endl;
+    std::cout << "save - ÑÐ¾Ñ…Ñ€Ð°Ð½ÐµÐ½Ð¸Ðµ Ñ‚ÐµÐºÑƒÑ‰ÐµÐ³Ð¾ ÐºÑƒÐ±Ð¸ÐºÐ° Ð² Ñ„Ð°Ð¹Ð»" << std::endl;
+    std::cout << "print - Ð²Ñ‹Ð²Ð¾Ð´ Ñ‚ÐµÐºÑƒÑ‰ÐµÐ³Ð¾ ÐºÑƒÐ±Ð¸ÐºÐ° Ð² ÐºÐ¾Ð½ÑÐ¾Ð»ÑŒ " << std::endl;
+    std::cout << "Ð”Ð»Ñ ÑÐ¾Ð²ÐµÑ€ÑˆÐµÐ½Ð¸Ñ Ð¿Ð¾Ð²Ð¾Ñ€Ð¾Ñ‚Ð°, Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½ÑƒÐ¶Ð½Ñ‹Ð¹ Ð²Ð°Ð¼ Ð¿Ð¾Ð²Ð¾Ñ€Ð¾Ñ‚" << std::endl;
+    std::cout << "Ð”Ð»Ñ Ð·Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¸Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ñ ÐºÑƒÐ±Ð¸ÐºÐ¾Ð¼ Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ end" << std::endl;
     Rubik_Cube cube;
     Rubik_Cube rand_cube;
     std::string command;
@@ -111,9 +111,9 @@ int main()
         else if (command == "check")
         {
             if (cube_algorithm::check_cube(cube) == true)
-                std::cout << "Õîðîøèé êóá!";
+                std::cout << "Ð¥Ð¾Ñ€Ð¾ÑˆÐ¸Ð¹ ÐºÑƒÐ±!";
             else
-                std::cout << "Íå î÷åíü õîðîøèé êóá!";
+                std::cout << "ÐÐµ Ð¾Ñ‡ÐµÐ½ÑŒ Ñ…Ð¾Ñ€Ð¾ÑˆÐ¸Ð¹ ÐºÑƒÐ±!";
         }
         else if (command == "solve_rand")
         {
@@ -218,6 +218,6 @@ int main()
         else if (command == "end")
             flag = -1;
     }
-    std::cout << "Ïðèõîäèòå åùå!";
+    std::cout << "ÐŸÑ€Ð¸Ñ…Ð¾Ð´Ð¸Ñ‚Ðµ ÐµÑ‰Ðµ!";
     return 0;
 }
